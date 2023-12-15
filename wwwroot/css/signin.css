@@ -50,7 +50,7 @@
 {
     width: 100%;
     height: 100vh;
-    background-image: url('https://wallpapers.com/images/high/anime-sunset-3owmm000g12ih3ip.webp'); */
+    background-image: url('https://wallpapers.com/images/high/anime-sunset-3owmm000g12ih3ip.webp');
     
 }
 .home
@@ -119,7 +119,7 @@
     margin-left: 20px;
     color: #fff;
 }
-.login
+.menu
 {
     width: 450px;
     position: relative;
@@ -127,71 +127,16 @@
     backdrop-filter: blur(20px);
 }
 
-.login h2
-{
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #fff;
-}
-.login .input
-{
-    position: relative;
-    width: 100%;
-    height: 30px;
-    margin-bottom: 40px;
-}
 
-.login .input .input1
-{
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    width: 100%;
-    height: 100%;
-}
+
 ::placeholder
 {
     color: #fff;
     font-size: 18px;
 }
-.login .input i
-{
-    position: relative;
-    right: -370px;
-    bottom: 27px;
-    color: #fff;
-}
-.check
-{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    color: #fff;
-}
 
-.check a
-{
-    text-decoration: none;
-    color: #fff;
-}
-.check a:hover
-{
-    text-decoration: underline;
-}
-.login .button
-{
-    width: 100px;
-    height: 40px;
-    margin-bottom: 15px;
-}
+
+
 button{
     width: 100%;
     height: 40px;
@@ -202,15 +147,25 @@ button{
     font-weight: 700;
     border-radius: 7px;
     color: #fff;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
 button:active
 {
     font-size: 25px;
 }
-.login .sign-up
+.input i
+{
+    position: relative;
+    right: -370px;
+    bottom: 27px;
+    color: #fff;
+}
+/* .login .sign-up
 {
     display: flex;
     justify-content: center;
+    
     
 }
 
@@ -219,6 +174,7 @@ button:active
     color: #fff;
     text-decoration: none;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .login .sign-up p
@@ -229,4 +185,6 @@ button:active
 .sign-up a:hover
 {
     text-decoration: underline;
-}
+} */
+
+

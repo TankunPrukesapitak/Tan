@@ -1,0 +1,19 @@
+@keyframes rotatePages {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(90deg);
+    }
+}
+
+.show-popup .signup-form {
+    animation: rotatePages 0.5s forwards;
+    
+}
+
+.show-popup .signin-form {
+    animation: rotatePages 0.5s forwards;
+    
+}
+

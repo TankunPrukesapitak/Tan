@@ -15,7 +15,16 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+
+
+        Student s1 = new Student { Id = 1, Name = "Tankun", Score = 30 };
+        Student s2 = new Student { Id = 2, Name = "Home", Score = 100 };
+        Student s3 = new Student { Id = 3, Name = "Toomtam", Score = 99 };
+        Student s4 = new Student { Id = 4, Name = "Chang", Score = 98 };
+        Student s5 = new Student { Id = 5, Name = "Tiw", Score = 101 };
+
+        List<Student> Allstudent = new List<Student> { s1, s2, s3, s4, s5 };
+        return View(Allstudent);
     }
 
     public IActionResult Privacy()

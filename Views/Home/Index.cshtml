@@ -1,8 +1,28 @@
-﻿@{
+﻿@model IEnumerable<Tan.Models.Student>
+@{
     ViewData["Title"] = "Home Page";
 }
+<div>
+    <div class="text-center">
+        <h1 class="display-4">Test page</h1>
+        <p> Go Go Go <a href="Account/Signin">Go to Website</a>.</p>
+    </div>
+    <div>
+        @foreach(var Student in Model) 
+        {
+            <p> เลขที่ :  @Student.Id </p>
+            <p> ชื่อ : @Student.Name </p>
+            <p> คะแนนสอบ : @Student.Score </p>
+            @if (@Student.Score>=50) {
+                <strong class="text-success" style="color: green;"> สอบผ่าน </strong>
+            }
+            else {
+                <strong class="text-danger" style="color: red;"> สอบไม่ผ่าน </strong>
+            }
+            <hr/>
+        }
 
-<div class="text-center">
-    <h1 class="display-4">Main page</h1>
-    <p>Learn about <a href="Account/Login">building Web apps with ASP.NET Core</a>.</p>
+    </div>
 </div>
+
+

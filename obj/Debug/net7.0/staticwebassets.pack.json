@@ -5,28 +5,44 @@
       "PackagePath": "staticwebassets\\Tan.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\login.css",
-      "PackagePath": "staticwebassets\\css\\login.css"
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\loading.css",
+      "PackagePath": "staticwebassets\\css\\loading.css"
     },
     {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\navbar.css",
       "PackagePath": "staticwebassets\\css\\navbar.css"
     },
     {
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\signin-popup.css",
+      "PackagePath": "staticwebassets\\css\\signin-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\signin.css",
+      "PackagePath": "staticwebassets\\css\\signin.css"
+    },
+    {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\signup.css",
       "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\test.css",
+      "PackagePath": "staticwebassets\\css\\test.css"
     },
     {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\loading.js",
+      "PackagePath": "staticwebassets\\js\\loading.js"
+    },
+    {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\signup.js",
       "PackagePath": "staticwebassets\\js\\signup.js"
     },
     {
-      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\test.js",
+      "PackagePath": "staticwebassets\\js\\test.js"
     },
     {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\lib\\bootstrap\\LICENSE",

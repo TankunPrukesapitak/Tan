@@ -5,15 +5,15 @@ namespace Tan.Controllers;
 
 public class AccountController : Controller
 {
-    public IActionResult Login()
+    public IActionResult Signin()
     {
         return View();
     }
 
-    // public IActionResult Signup()
-    // {
-    //     return View();
-    // }
+    public IActionResult Signup()
+    {
+        return View();
+    }
 
 
 
