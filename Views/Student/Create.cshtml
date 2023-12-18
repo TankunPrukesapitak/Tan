@@ -1,0 +1,45 @@
+﻿@model Student
+
+@{
+    ViewData["Title"] = "Form Page";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
+<style>
+    body {
+        background-color: black;
+        color: white;/
+    }
+
+    .text-center {
+        color: white;
+    }
+
+    .form-control {
+        color: black; 
+    }
+</style>
+
+<div class="screen">
+    <div class="text-center" style="position: absolute; top: 3cm;">
+        <h1 class="display-4"  >Test page</h1>
+        <p> Are you ready <a href="http://localhost:5122/" style="color: white;">Website</a>.</p>
+    
+    </div>
+    <form class="group" style="position: absolute; top: 6cm;" method="post" asp-controller="Student" asp-action="Create">
+        
+        <div>
+            <label asp-for="Name"></label>
+            <input type="text" asp-for="Name" class="form-control"/>
+            <span asp-validation-for="Name" style="color: red;"></span>
+        </div>
+        <div>
+            <label asp-for="Score"></label>
+            <input type="number" asp-for="Score" class="form-control"/>
+            <span asp-validation-for="Score" style="color: red;"></span>
+        </div>
+        <button class="btn btn-primary my-2"> Submit </button>
+
+    </form>
+</div>
+
+

@@ -1,3 +1,4 @@
+@model UserModel;
 @{
     ViewData["Title"] = "Sign In Page";
 }
@@ -8,9 +9,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="~/css/signin.css">
     <link rel="stylesheet" href="~/css/signup.css">
     <link rel="stylesheet" href="~/css/test.css">
+    <link rel="stylesheet" href="~/css/loading.css">
     <link rel="stylesheet" href="~/css/signin-popup.css">
     <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
     
@@ -18,8 +21,7 @@
 
 
 </head>
-<body>
-
+<body>   
         <div class="background"></div>
         <section class="home">
             <div class="content">
@@ -43,22 +45,26 @@
                     <div class="popup-content">
                             <div class="signup-form">
                                 <h3 >Sign Up</h3>
+                    
+                                    <form class="input" asp-controller="Account" asp-action="Register" method="post">
 
-                                    <div class="input">
-                                        <input type="email" id="email-sign-up" class="email" placeholder="Email" required>
+                                        <input type="email" id="email-sign-up" class="email" placeholder="Email" asp-for="Email" required>
                                         <i class="fa-solid fa-envelope"></i>
                                     
-                                        <input type="password" id="password-sign-up" class="password" placeholder="Password" required>
+                                        <input type="password" id="password-sign-up" class="password" placeholder="Password" asp-for="Password "required>
                                         <i class="fa-solid fa-lock"></i>
 
                                         <input type="password" id="confirmPassword-sign-up" class="confirmpassword" placeholder="Confirm password" required>
                                         <i class="fa-solid fa-lock"></i>
+
                                         <button type="submit">Sign Up</button>
+
                                         <div class="sign-in">
                                             <p> Already have an account? </p>
                                             <a id="sign-in">Sign In</a>
                                         </div>
-                                    </div>   
+                                    </form>
+                                       
                             </div>
                     </div>
                 </div>
@@ -67,38 +73,42 @@
                     <div class="signin-popup-content">
                         <div class="signin-form">
                             <h4>Sign In</h4>
+                            <form asp-controller="Account" asp-action="Login" method="post">
+                                <div class="input">
+                                    <input type="text" id="email-sign-in" class="email-signin" placeholder="Email" asp-for="Email" required>
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
 
-                            <div class="input">
-                                <input type="text" id="email-sign-in" class="email-signin" placeholder="Email" required>
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
+                                <div class="input">
+                                    <input type="password" id="password-sign-in" class="password-signin" placeholder="Password" asp-for="Password" required>
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
 
-                            <div class="input">
-                                <input type="password" id="password-sign-in" class="password-signin" placeholder="Password" required>
-                                <i class="fa-solid fa-lock"></i>
-                            </div>
+                                <div class="check">
+                                    <label> <input type="checkbox" id="Checkbox-sign-in">Remember me </label>
+                                    <a href="#"> Forgot Password?</a>
+                                </div>
 
-                            <div class="check">
-                                <label> <input type="checkbox" id="Checkbox-sign-in">Remember me </label>
-                                <a href="#"> Forgot Password?</a>
-                            </div>
-
-                            <div class="button">
-                                <button id="SignIn"> Sign In </button>
-                            </div>
-                
-                            <div class="sign-up">
-                                <p> Don't have an account? </p>
-                                <a id="sign-up" >Sign up</a>
-                            </div>
+                                <div class="button">
+                                    <button id="SignIn"> Sign In </button>
+                                </div>
+                    
+                                <div class="sign-up">
+                                    <p> Don't have an account? </p>
+                                    <a id="sign-up" > Sign up</a>
+                                </div>
+                            </form>
                                      
                         </div>
                     </div>
                 </div>
-                           
+
+               
                <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+               <script src="~/js/loading.js"></script>
                <script src="~/js/signup.js"></script>
                <script src="~/js/test.js"></script>
+      
             </div>
 
   

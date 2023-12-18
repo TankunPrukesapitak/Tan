@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Tan.Models.Student>
+@{
+    ViewData["Title"] = "Student Page";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
+
+<style>
+    body {
+        background-color: black;
+        color: white;/
+    }
+
+    .text-center {
+        color: white;
+    }
+
+    .form-control {
+        color: black; 
+    }
+</style>
+
+<div>
+    <div class="text-center" style="position: absolute; top: 3cm;>
+        <h1 style="display: flex; align-items: center; justify-content: center;" class="display-4">Test page</h1>
+        <p> Are you ready <a href="Account/Signin" style="color: white;">Go to Website</a>.</p>
+        <p> Form <a href="http://localhost:5122/Student/Create" style="color: white;"> Score </a>.</p>
+    </div>
+
+
+    @if (Model.Count()>0)
+    {
+        <table class="table" style="position: absolute; top: 6cm; color: white;">
+            <thead>
+                <tr>
+                    <th>รหัสนักเรียน</th>
+                    <th>ชื่อนักเรียน</th>
+                    <th>คะแนนสอบ</th>
+                    <th>แก้ไข</th>
+                    <th>ลบ</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var Student in Model) 
+                {
+                    <tr>
+                        <td> @Student.Id </td>
+                        <td> @Student.Name </td>
+                        <td> @Student.Score </td>
+                        <td><a class="btn btn-warning" 
+                        asp-controller="Student" 
+                        asp-action="Edit"
+                        asp-route-id="@Student.Id">แก้ไข</a></td>
+                        <td><a class="btn btn-danger"
+                        asp-controller="Student"
+                        asp-action="Delete"
+                        asp-route-id="@Student.Id"
+                        onclick="return confirm('จะลบไอ้ @Student.Name แน่นะ')"
+                        >ลบ</a></td>
+                
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+   
+        <div>
+            <p style="position: absolute; top: 6cm;"> ไม่มีข้อมูลในระบบ </p>
+            <hr>
+        </div>
+    }
+
+</div>
+
+
+
+
+

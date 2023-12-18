@@ -1,0 +1,28 @@
+@model Student;
+@{
+    ViewData["Title"] = "แก้ไขข้อมูล";
+}
+<style>
+    body {
+        background-color: black;
+        color: white;/
+    }
+
+</style>
+
+<h1> แก้ไขข้อมูล </h1>
+    <form class="group" style="position: absolute; top: 6cm;" method="post" asp-controller="Student" asp-action="Edit">
+        
+        <div>
+            <label asp-for="Name"></label>
+            <input type="text" asp-for="Name" class="form-control"/>
+            <span asp-validation-for="Name" style="color: red;"></span>
+        </div>
+        <div>
+            <label asp-for="Score"></label>
+            <input type="number" asp-for="Score" class="form-control"/>
+            <span asp-validation-for="Score" style="color: red;"></span>
+        </div>
+        <button class="btn btn-primary my-2"> อัพเดต </button>
+
+    </form>

@@ -18,6 +18,7 @@
     padding: 20px 100px;
     z-index: 99;
     background: transparent;
+
 }
 .header .nav a
 {
@@ -46,14 +47,6 @@
     color: #fff;
 
 }
-.background
-{
-    width: 100%;
-    height: 100vh;
-    background-image: url('https://wallpapers.com/images/high/anime-sunset-3owmm000g12ih3ip.webp'); */
-    
-}
 
-.header {
-    color: black;
-}
+
+
