@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "meGY6DPWVNNArpmTyn7C0exd+QPKG6lHOGvt9E92Gxg=",
+  "Hash": "MIjBePanjL5DVK98yXXHpjb6Fj8ep0PgWqt0MubTpPo=",
   "Source": "Tan",
   "BasePath": "_content/Tan",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Tan.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\animation.css",
+      "SourceId": "Tan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\",
+      "BasePath": "_content/Tan",
+      "RelativePath": "css/animation.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\animation.css"
     },
     {
       "Identity": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\loading.css",
@@ -136,23 +153,6 @@
       "OriginalItemSpec": "wwwroot\\css\\signup.css"
     },
     {
-      "Identity": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\test.css",
-      "SourceId": "Tan",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\",
-      "BasePath": "_content/Tan",
-      "RelativePath": "css/test.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\test.css"
-    },
-    {
       "Identity": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\favicon.ico",
       "SourceId": "Tan",
       "SourceType": "Discovered",
@@ -168,6 +168,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\error-login.js",
+      "SourceId": "Tan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\",
+      "BasePath": "_content/Tan",
+      "RelativePath": "js/error-login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\error-login.js"
+    },
+    {
+      "Identity": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\error-message-login.js",
+      "SourceId": "Tan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\",
+      "BasePath": "_content/Tan",
+      "RelativePath": "js/error-message-login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\error-message-login.js"
     },
     {
       "Identity": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\loading.js",
@@ -219,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\test.js"
+    },
+    {
+      "Identity": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\validate-signup.js",
+      "SourceId": "Tan",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\",
+      "BasePath": "_content/Tan",
+      "RelativePath": "js/validate-signup.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\validate-signup.js"
     },
     {
       "Identity": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",

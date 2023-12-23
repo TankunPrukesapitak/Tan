@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Tan.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\animation.css",
+      "PackagePath": "staticwebassets\\css\\animation.css"
+    },
+    {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\loading.css",
       "PackagePath": "staticwebassets\\css\\loading.css"
     },
@@ -25,12 +29,16 @@
       "PackagePath": "staticwebassets\\css\\signup.css"
     },
     {
-      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\css\\test.css",
-      "PackagePath": "staticwebassets\\css\\test.css"
-    },
-    {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\error-login.js",
+      "PackagePath": "staticwebassets\\js\\error-login.js"
+    },
+    {
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\error-message-login.js",
+      "PackagePath": "staticwebassets\\js\\error-message-login.js"
     },
     {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\loading.js",
@@ -43,6 +51,10 @@
     {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\test.js",
       "PackagePath": "staticwebassets\\js\\test.js"
+    },
+    {
+      "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\js\\validate-signup.js",
+      "PackagePath": "staticwebassets\\js\\validate-signup.js"
     },
     {
       "Id": "C:\\Users\\Zipevent\\Desktop\\jenskins project\\Tan\\wwwroot\\lib\\bootstrap\\LICENSE",

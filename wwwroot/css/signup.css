@@ -96,3 +96,8 @@
     text-decoration: underline;
 }
 
+.warning
+{
+    color: black;
+    text-align: center;
+}

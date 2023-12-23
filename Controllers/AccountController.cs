@@ -11,6 +11,10 @@ namespace Tan.Controllers;
 
 public class AccountController : Controller
 {
+    public IActionResult Test()
+    {
+        return View();
+    }
 
     private readonly ApplicationDBContext _context;
 
@@ -36,27 +40,39 @@ public class AccountController : Controller
             if (user != null)
             {
                 // Email และ Password ตรงกับในฐานข้อมูล
-                return RedirectToAction("Index", "Student");
+                return Json(new { success = true });
             }
             else
             {
                 // Email หรือ Password ไม่ตรงกับในฐานข้อมูล
-                ModelState.AddModelError(string.Empty, "อีเมลหรือรหัสผ่านไม่ถูกต้อง");
-                return View("Login", model);
+                return Json(new { success = false, message = "The email or password is incorrect. Please try again." });
             }
         }
 
         return View("Login", model);
     }
 
-
     [HttpPost]
     public async Task<IActionResult> Register(UserModel model)
     {
+        // Check if the model is valid
+        if (!ModelState.IsValid)
+        {
+            return View(model);
+        }
+
+        // Check if the email is already registered
         if (_context.Users.Any(u => u.Email == model.Email))
         {
-            ModelState.AddModelError("Email", "This email is already registered.");
-            return View(model);
+            // Email is already registered
+            return Json(new { success = false, message = "This email is already registered." });
+        }
+
+        // Check if passwords match
+        if (model.Password != model.ConfirmPassword)
+        {
+            // Passwords do not match
+            return Json(new { success = false, message = "Passwords do not match." });
         }
 
         var newUser = new UserModel
@@ -64,12 +80,34 @@ public class AccountController : Controller
             Email = model.Email,
             Password = model.Password,
         };
-
         _context.Users.Add(newUser);
         await _context.SaveChangesAsync();
 
-        return RedirectToAction("Login");
+        // Registration successful
+        return Json(new { success = true, message = "Registration successful! Please log in." });
     }
+
+
+    // [HttpPost]
+    // public async Task<IActionResult> Register(UserModel model)
+    // {
+    //     if (_context.Users.Any(u => u.Email == model.Email))
+    //     {
+    //         ModelState.AddModelError("Email", "This email is already registered.");
+    //         return View(model);
+    //     }
+
+    //     var newUser = new UserModel
+    //     {
+    //         Email = model.Email,
+    //         Password = model.Password,
+    //     };
+
+    //     _context.Users.Add(newUser);
+    //     await _context.SaveChangesAsync();
+
+    //     return RedirectToAction("Login");
+    // }
 
     
 }

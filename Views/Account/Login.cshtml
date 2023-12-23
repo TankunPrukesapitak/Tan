@@ -9,10 +9,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="~/css/error.css">
     <link rel="stylesheet" href="~/css/signin.css">
     <link rel="stylesheet" href="~/css/signup.css">
-    <link rel="stylesheet" href="~/css/test.css">
+    <link rel="stylesheet" href="~/css/animation.css">
     <link rel="stylesheet" href="~/css/loading.css">
     <link rel="stylesheet" href="~/css/signin-popup.css">
     <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
@@ -41,38 +41,12 @@
 
             </div>
             <div class="menu" id="menu">
-                <div id="signup-popup" class="popup">
-                    <div class="popup-content">
-                            <div class="signup-form">
-                                <h3 >Sign Up</h3>
-                    
-                                    <form class="input" asp-controller="Account" asp-action="Register" method="post">
 
-                                        <input type="email" id="email-sign-up" class="email" placeholder="Email" asp-for="Email" required>
-                                        <i class="fa-solid fa-envelope"></i>
-                                    
-                                        <input type="password" id="password-sign-up" class="password" placeholder="Password" asp-for="Password "required>
-                                        <i class="fa-solid fa-lock"></i>
-
-                                        <input type="password" id="confirmPassword-sign-up" class="confirmpassword" placeholder="Confirm password" required>
-                                        <i class="fa-solid fa-lock"></i>
-
-                                        <button type="submit">Sign Up</button>
-
-                                        <div class="sign-in">
-                                            <p> Already have an account? </p>
-                                            <a id="sign-in">Sign In</a>
-                                        </div>
-                                    </form>
-                                       
-                            </div>
-                    </div>
-                </div>
 
                 <div id="signin-popup" class="signin-popup">
                     <div class="signin-popup-content">
                         <div class="signin-form">
-                            <h4>Sign In</h4>
+                            <h4>Login</h4>
                             <form asp-controller="Account" asp-action="Login" method="post">
                                 <div class="input">
                                     <input type="text" id="email-sign-in" class="email-signin" placeholder="Email" asp-for="Email" required>
@@ -90,21 +64,61 @@
                                 </div>
 
                                 <div class="button">
-                                    <button id="SignIn"> Sign In </button>
+                                    <button id="SignIn"> Login </button>
                                 </div>
                     
                                 <div class="sign-up">
                                     <p> Don't have an account? </p>
-                                    <a id="sign-up" > Sign up</a>
+                                    <a id="sign-up" > Register </a>
                                 </div>
                             </form>
+                         
                                      
                         </div>
                     </div>
-                </div>
+               
 
+                </div>
+                
+                <div id="signup-popup" class="popup">
+                    <div class="popup-content">
+                            <div class="signup-form">
+                                <h3 >Register</h3>
+                    
+                                    <form class="input" asp-controller="Account" asp-action="Register" method="post">
+
+                                        <input type="email" id="email-sign-up" class="email" placeholder="Email" asp-for="Email" required>
+                                        <i class="fa-solid fa-envelope"></i>
+                                    
+                                        <input type="password" id="password-sign-up" class="password" placeholder="Password" asp-for="Password "required>
+                                        <i class="fa-solid fa-lock"></i>
+
+                                        <input type="password" id="confirmPassword-sign-up" class="confirmpassword" placeholder="Confirm password" required>
+                                        <i class="fa-solid fa-lock"></i>
+
+                                        <button id="SignUp">Register</button>
+                                    
+
+                                        <div class="sign-in">
+                                            <p> Already have an account? </p>
+                                            <a id="sign-in">Login</a>
+                                        </div>
+                                        <div style="background-color: red; margin-top: 30px;">
+                                            <p class="warning"> อย่าใส่รหัสผ่านจริง Database บันทึกไว้ ไม่ได้ซ่อน </p>
+                                        </div>
+                                  
+                                    </form>
+                                       
+                            </div>
+                    </div>
+                </div>
+              
                
                <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+               <script src="~/js/error-message-login.js"></script>
+                <script src="~/js/validate-signup.js"></script>
+               <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+               
                <script src="~/js/loading.js"></script>
                <script src="~/js/signup.js"></script>
                <script src="~/js/test.js"></script>
@@ -113,6 +127,9 @@
 
   
         </section>
- 
+
+
 </body>
 </html>
+
+

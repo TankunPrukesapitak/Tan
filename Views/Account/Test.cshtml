@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Test error Page";
+}
+
+<body>
+    <form style="position: absolute; top: 6cm;">
+        <div>
+            <button type="button" id="tan132" onclick="check()">Submit</button>
+        </div>
+    </form>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        function check() {
+            swal("Warning", "Please indicate that you accept the Terms and Conditions and Privacy Policy", "error");
+        }
+    </script>
+</body>

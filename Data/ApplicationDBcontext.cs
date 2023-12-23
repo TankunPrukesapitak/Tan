@@ -23,10 +23,10 @@ namespace Tan.Data
             }
         }
 
-        public DbSet<Student> Students { get; set; }
+        public DbSet<Student> Students { get; set; } = null!;
     
 
-        public DbSet<UserModel> Users { get; set; }
+        public DbSet<UserModel> Users { get; set; } = null!;
     }
 }
 
