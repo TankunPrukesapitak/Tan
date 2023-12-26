@@ -39,12 +39,10 @@ public class AccountController : Controller
 
             if (user != null)
             {
-                // Email และ Password ตรงกับในฐานข้อมูล
                 return Json(new { success = true });
             }
             else
             {
-                // Email หรือ Password ไม่ตรงกับในฐานข้อมูล
                 return Json(new { success = false, message = "The email or password is incorrect. Please try again." });
             }
         }
@@ -55,23 +53,23 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> Register(UserModel model)
     {
-        // Check if the model is valid
+  
         if (!ModelState.IsValid)
         {
             return View(model);
         }
 
-        // Check if the email is already registered
+
         if (_context.Users.Any(u => u.Email == model.Email))
         {
-            // Email is already registered
+        
             return Json(new { success = false, message = "This email is already registered." });
         }
 
-        // Check if passwords match
+
         if (model.Password != model.ConfirmPassword)
         {
-            // Passwords do not match
+
             return Json(new { success = false, message = "Passwords do not match." });
         }
 
@@ -83,7 +81,7 @@ public class AccountController : Controller
         _context.Users.Add(newUser);
         await _context.SaveChangesAsync();
 
-        // Registration successful
+
         return Json(new { success = true, message = "Registration successful! Please log in." });
     }
 
