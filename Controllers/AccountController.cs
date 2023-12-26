@@ -88,26 +88,4 @@ public class AccountController : Controller
     }
 
 
-    // [HttpPost]
-    // public async Task<IActionResult> Register(UserModel model)
-    // {
-    //     if (_context.Users.Any(u => u.Email == model.Email))
-    //     {
-    //         ModelState.AddModelError("Email", "This email is already registered.");
-    //         return View(model);
-    //     }
-
-    //     var newUser = new UserModel
-    //     {
-    //         Email = model.Email,
-    //         Password = model.Password,
-    //     };
-
-    //     _context.Users.Add(newUser);
-    //     await _context.SaveChangesAsync();
-
-    //     return RedirectToAction("Login");
-    // }
-
-    
 }
