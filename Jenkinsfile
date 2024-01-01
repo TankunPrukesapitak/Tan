@@ -17,7 +17,7 @@ pipeline {
                 steps {
                     script {
                         git branch: "master", 
-                        credentialsId: "b413be9d-4e2f-4d3b-9bff-0823d21b3292", 
+                        // credentialsId: "b413be9d-4e2f-4d3b-9bff-0823d21b3292", 
                         url: "git@bitbucket.org:tanproject/tan.git"
                     }
                 }
@@ -27,8 +27,8 @@ pipeline {
             stage("Build and Run .NET Core MVC") {
                 steps {
                     script {
-                        bat "dotnet restore"
-                        bat "dotnet build"
+                        sh "dotnet restore"
+                        sh "dotnet build"
                         def runStatus = bat script: "start /b dotnet run", returnStatus: true
                         echo "dotnet run exit code: ${runStatus}"
                         if (runStatus == 0) {
@@ -43,9 +43,8 @@ pipeline {
 
             stage("Testing") {
                 steps{
-                    bat "npm i"
-                    bat 'set NO_COLOR=1'
-                    bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
+                    sh "npm i"
+                    sh "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
                 }
            }
         }
