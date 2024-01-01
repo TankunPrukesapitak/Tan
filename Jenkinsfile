@@ -29,7 +29,7 @@ pipeline {
                     script {
                         sh "dotnet restore"
                         sh "dotnet build"
-                        def runStatus = bat script: "start /b dotnet run", returnStatus: true
+                        def runStatus = sh script: "start /b dotnet run", returnStatus: true
                         echo "dotnet run exit code: ${runStatus}"
                         if (runStatus == 0) {
                             echo "dotnet run completed successfully. Skipping Testing stage."
