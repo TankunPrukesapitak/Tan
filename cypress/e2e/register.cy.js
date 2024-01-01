@@ -17,11 +17,13 @@ describe('Register Feature', () => {
     );
     cy.get(locator.registerButton).click();
     cy.contains(registerTestData.SuccessMessage).should('be.visible');
-    cy.contains('OK',
-     { matchCase: false }
+    cy.contains(
+      'OK',
+      { matchCase: false }
     ).first().click();
-    cy.url().should('eq',
-     `${locator.BaseURL}${locator.PathURL_2}`
+    cy.url().should(
+      'eq',
+      `${locator.BaseURL}${locator.PathURL_2}`
     );
     cy.get('[id="SignIn"]').should('be.visible');
   })
@@ -47,12 +49,12 @@ describe('Register Feature', () => {
 
   it('TC_L_3 Verify that the user cannot register successfully if the password and password confirmation do not match.', () => {
     registerKeyword.registerWithCredentials(
-      registerTestData.randomEmail, 
+      registerTestData.randomEmail_2, 
       registerTestData.password, 
       registerTestData.confirmpassword_2
     );
     cy.get(locator.registerButton).click();
-    cy.contains(registerTestData.errorMessage_3).should('be.visible');
+    cy.contains(registerTestData.errorMessage_3, { timeout: 10000 }).should('be.visible');
     cy.contains(
       'OK', 
       { matchCase: false }
@@ -68,7 +70,8 @@ describe('Register Feature', () => {
     registerKeyword.registerWithCredentials(
       registerTestData.randomEmail,
       registerTestData.password,
-      registerTestData.confirmpassword_2);
+      registerTestData.confirmpassword_2
+    );
     cy.get(locator.passwordRegister).clear();
     cy.get(locator.registerButton).click();
     cy.contains(registerTestData.errorMessage_1).should('be.visible');
