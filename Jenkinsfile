@@ -18,7 +18,7 @@ pipeline {
                     script {
                         git branch: "master", 
                         // credentialsId: "b413be9d-4e2f-4d3b-9bff-0823d21b3292", 
-                        url: "git@bitbucket.org:tanproject/tan.git"
+                        url: "https://github.com/TankunPrukesapitak/Tan.git"
                     }
                 }
             }
