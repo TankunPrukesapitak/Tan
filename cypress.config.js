@@ -7,4 +7,8 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 467e99bb3191e604676f4791fa2215a068b23059
